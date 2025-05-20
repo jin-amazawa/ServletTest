@@ -28,6 +28,14 @@ public class siryouseikyuu extends HttpServlet{
 		
 		out.println("<p>氏名：" + name + "</p>");
 		out.println("<p>会社：" + company + "</p>");
+		out.println("<p>メールアドレス：" + email + "</p>");
+		out.println("<p>問い合わせ内容：" + contact + "</p>");
+		
+		out.println("<p>メルマガ：</p>");
+		for(int i = 0; i < merumaga_checked.length; i++) {
+			out.println("<p>" + merumaga_checked[i] + "</p>");
+		}
+		
 		
 		
 		if("Yes".equals(YesOrNo)) {
